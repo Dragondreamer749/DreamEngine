@@ -2,22 +2,20 @@ package github.dragondreamer749.enginelearn.registry;
 
 import java.util.Map;
 
-public class Registry<e extends RegistryEntry<e>> {
+public class Registry<E extends RegistryEntry<E>> {
 
-	 private Map<ResourceLocation,e> backingMap;
+	 private Map<ResourceLocation,E> backingMap;
 
 	 
-	 public void addEntry(e) {
+	 public void addEntry(E e) {
 		 
-		 if(backingMap.putIfAbsent(e.getName(e)!= null, e)) {
-			 
-			 
-		 }
+		 if(backingMap.putIfAbsent(e.getName(), e)!= null)
+		 	throw new IllegalArgumentException();
 		
 		 
 	 }
 	 
-	 public e readEntrys() {
+	 public E readEntrys() {
 		 
 	 }
 }

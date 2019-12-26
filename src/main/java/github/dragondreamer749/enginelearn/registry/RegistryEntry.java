@@ -1,9 +1,9 @@
 package github.dragondreamer749.enginelearn.registry;
 
-public interface RegistryEntry<e extends RegistryEntry<e>> {
+public interface RegistryEntry<E extends RegistryEntry<E>> {
 
 	public ResourceLocation getName();
 	
-	public Class<e> getType();
-	
+	public Class<E> getType();
+
 }
