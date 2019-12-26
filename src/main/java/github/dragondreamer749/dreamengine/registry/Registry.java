@@ -10,12 +10,14 @@ public class Registry<E extends RegistryEntry<E>> {
 	 public void addEntry(E e) {
 		 
 		 if(backingMap.putIfAbsent(e.getName(), e)!= null)
-		 	throw new IllegalArgumentException();
+		 	throw new IllegalArgumentException("Wait... I know you. (Registry entry already has that name)");
 		
 		 
 	 }
 	 
-	 public E readEntrys() {
+	 public E getEntry(ResourceLocation resource) {
+		 
+		 
 		 
 	 }
 }
