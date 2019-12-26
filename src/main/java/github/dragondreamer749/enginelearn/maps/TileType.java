@@ -1,8 +1,7 @@
 package github.dragondreamer749.enginelearn.maps;
 
-public class Tile {
+public class TileType {
 
-	private boolean Collision; 
 	
 	
 }
