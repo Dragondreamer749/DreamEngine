@@ -23,9 +23,7 @@ public class Registry<E extends RegistryEntry<E>> {
 	 
 	 
 	 public E getEntry(ResourceLocation resource) {
-		 
-		 return (E) backingMap.get(resource).getName();
-		  
+		 return backingMap.get(resource);
 	 }
 	 
 	 public Stream<E> streamEntry(){
