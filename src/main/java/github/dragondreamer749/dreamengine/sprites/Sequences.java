@@ -8,7 +8,7 @@ import java.util.HashMap;
 import github.dragondreamer749.dreamengine.resources.ResourceLocation;
 import javax.imageio.ImageIO;
 
-//e
+
 public class Sequences {
 
 	
