@@ -5,3 +5,6 @@
 build
 /bin/
 /.idea/
+
+# Ignore temporary files produced by vim
+*~
